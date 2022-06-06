@@ -8,14 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    var signals: [Signals] = []
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+        List(signals) { signals in
+            NavigationLink(destination: SignalDetail(signals: signals)) {
+                HStack {
+                    Text("\(signals.number)")
+                        .foregroundColor(.secondary)
+                    Text(signals.name)
+                        .font(.headline)
+                        .foregroundColor(.primary)
+                }
+            }
+        }
+        .navigationTitle(Text("37 Signals"))
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(signals: testData)
     }
+}
 }

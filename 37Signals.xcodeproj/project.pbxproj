@@ -11,6 +11,8 @@
 		DA61F608284E10450097C7C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA61F607284E10450097C7C4 /* ContentView.swift */; };
 		DA61F60A284E10490097C7C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA61F609284E10490097C7C4 /* Assets.xcassets */; };
 		DA61F60D284E10490097C7C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA61F60C284E10490097C7C4 /* Preview Assets.xcassets */; };
+		DA61F614284E13D70097C7C4 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA61F613284E13D70097C7C4 /* Data.swift */; };
+		DA61F616284E5A620097C7C4 /* SignalDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA61F615284E5A620097C7C4 /* SignalDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		DA61F607284E10450097C7C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DA61F609284E10490097C7C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA61F60C284E10490097C7C4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DA61F613284E13D70097C7C4 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		DA61F615284E5A620097C7C4 /* SignalDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				DA61F605284E10450097C7C4 /* _7SignalsApp.swift */,
 				DA61F607284E10450097C7C4 /* ContentView.swift */,
+				DA61F615284E5A620097C7C4 /* SignalDetail.swift */,
+				DA61F613284E13D70097C7C4 /* Data.swift */,
 				DA61F609284E10490097C7C4 /* Assets.xcassets */,
 				DA61F60B284E10490097C7C4 /* Preview Content */,
 			);
@@ -138,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA61F608284E10450097C7C4 /* ContentView.swift in Sources */,
+				DA61F614284E13D70097C7C4 /* Data.swift in Sources */,
+				DA61F616284E5A620097C7C4 /* SignalDetail.swift in Sources */,
 				DA61F606284E10450097C7C4 /* _7SignalsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
