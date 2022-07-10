@@ -7,29 +7,27 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    var signals: [Signals] = []
+struct SignalRowView: View {
+    var signals: Signals
     
     var body: some View {
-        NavigationView {
-        List(signals) { signals in
-            NavigationLink(destination: SignalDetail(signals: signals)) {
-                HStack {
-                    Text("\(signals.number)")
-                        .foregroundColor(.secondary)
-                    Text(signals.name)
-                        .font(.headline)
-                        .foregroundColor(.primary)
-                }
-            }
+        VStack (alignment: .leading, spacing:3){
+            Text(signals.name)
+                .foregroundColor(.primary)
+                .font(.headline)
         }
         .navigationTitle(Text("37 Signals"))
     }
+    
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView(signals: testData)
+struct ContentView: View {
+    var body: some View {
+        List{
+            ForEach (besignal){ Signals in
+                SignalRowView(signals: Signals)
+            }
+            
     }
 }
 }

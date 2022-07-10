@@ -16,7 +16,7 @@ struct Signals : Identifiable {
 }
 
 
-let testData = [
+var besignal = [
     Signals(number: 00, name: "Start Here", signal: "Welcome. This site is a catalog of ideas — signals — that drive us. We’re best known for making Basecamp and HEY, writing business and software books (Getting Real, REWORK, REMOTE, It Doesn’t Have to Be Crazy at Work, and Shape Up), and inventing the Ruby on Rails framework. Have fun."),
     Signals(number: 01, name: "An obligation to independence", signal: "We have no investors, no board of directors, no eyes on an exit. We feel a moral obligation to exercise our independence. To do things no one would give us permission to do. To try things other companies would be afraid to try. To skip safe, and go for original."),
     Signals(number: 02, name: "Work isn't war", signal: "Corporate language is filled with metaphors of war. Companies “conquer” the market, they “capture” mindshare, they “target” customers, they employ a sales “force”, they hire “head-hunters”, they “destroy” the competition, they pick their “battles”, and make a “killing”. That’s an awful paradigm and we want nothing to do with it. Work isn’t war. We come in peace."),

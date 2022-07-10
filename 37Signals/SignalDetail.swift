@@ -11,16 +11,17 @@ struct SignalDetail: View {
     let signals: Signals
     var body: some View {
             Text(signals.signal)
-                .font(.headline)
+            .font(.headline)
                 .padding()
+                .lineSpacing(4)
                 .navigationTitle(Text(signals.name))
                     .navigationBarTitleDisplayMode(.inline)
-                    
         }
     }
 
 struct SignalDetail_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView { SignalDetail(signals: testData[0]) }
+        NavigationView { SignalDetail(signals: besignal[0]) }
+            
     }
 }
